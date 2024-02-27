@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mern internship</title>
+</head>
+<body>
+   
+
+    
+    <h1 class="text-3xl font-bold tracking-tight m-10">ToDo App</h1>
+   
+   <div class="flex flex-row gap-3 m-10"> <input type="text" id="task-input" placeholder="Enter a task" class="border border-gray-200 bg-gray-100 p-2 rounded-lg">
+    <button  id="addbtn" onclick="addTask()" class="bg-black text-white px-3 py-2 rounded-full">Add Task</button>
+    <button  id="deletebtn" onclick="deleteAll()" class="bg-red-500 text-white px-3 py-2 rounded-full">Delete All</button></div>
+
+
+    <p class="ml-5">Here are your todos :
+    <span id="total-task"></span></p>
+
+
+    <div class="flex flex-col gap-3 m-12">
+
+    <ul id="task-list" ></ul>
+  
+   </div>
+  
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
